@@ -1,0 +1,515 @@
+/* ===== 공통 wrapper ===== */
+.home { 
+  padding-top: 100px;
+  background: #FAF7F2; color: #111;
+  overflow: hidden;
+}
+
+/* ===== 메인 배너 ===== */
+.home .hero { 
+  position: relative; z-index: 0; 
+}
+.home .hero .mySwiper { 
+  height: 500px; 
+}
+.home .hero .swiper { 
+  width: 100%;
+  max-width: none;
+  position: relative; 
+}
+.home .hero .swiper-wrapper { 
+  height: 100%; 
+}
+.home .hero .swiper-slide { 
+  display:flex; 
+  align-items:center; 
+  justify-content:center; 
+  background: transparent; 
+}
+.home .hero .swiper-slide img {
+  width: 100%;
+  max-width: 1920px;
+  height: 100%;
+  object-fit: fill;
+  display: block;
+}
+.home .hero .swiper-pagination {
+  position: absolute; 
+  bottom: 20px; left: 0; right: 0; 
+  text-align: center; 
+  z-index: 10;
+}
+.home .hero .swiper-pagination-bullet { 
+  width:10px; height:10px; 
+  background:#fff; 
+  opacity:.5; 
+}
+.home .hero .swiper-pagination-bullet-active { 
+  background:#D80056; 
+  opacity:1; 
+}
+
+/* ===== 섹션 타이틀/카테고리 ===== */
+.home .menu-header { 
+  padding: 30px 0; 
+  margin-top: 56px; 
+}
+.home .menu-header-inner {
+  display:flex; 
+  justify-content:space-between; 
+  align-items:center;
+  padding: 0 100px; 
+  max-width: 1200px; 
+  width: 100%; 
+  margin: 0 auto;
+}
+.home .menu-title { 
+  font-size: 28px; font-weight: 700; 
+  color:#111; 
+  white-space: nowrap; 
+}
+.home .menu-category { 
+  display:flex; 
+  gap:24px; 
+  list-style:none; 
+  margin:0; padding:0; 
+}
+.home .menu-category li { 
+  cursor:pointer; 
+  color:#888; 
+  font-size:16px; 
+}
+.home .menu-category li.active { 
+  color:#1B5E4A; 
+  font-weight:700; 
+}
+
+/* ===== 메뉴 슬라이더 ===== */
+.home .menu-section{ 
+  padding: 10px 0 60px;
+}
+.home .menuSwiper { 
+  width: 70%; 
+  margin: 0 auto; 
+  position: relative; 
+  overflow: hidden; 
+}
+.home .menuSwiper .swiper-wrapper { 
+  padding:0; 
+  margin:0; 
+}
+.home .menuSwiper .swiper-slide {
+  display:flex; 
+  justify-content:center; 
+  background:transparent;
+}
+.home .menuSwiper .menu-card { 
+  width: 100%;
+  max-width: 260px;
+  margin: 0 auto;
+  text-align:center; 
+  box-sizing:border-box; 
+}
+.home .menuSwiper .menu-card img {
+  width:100%; 
+  height: auto;
+  object-fit:cover;
+  aspect-ratio: 260 / 182; 
+  margin-bottom:16px; 
+  display:block;
+}
+.home .menuSwiper .menu-card h3 { 
+  font-size:16px; 
+  font-weight:700; 
+  margin-bottom:8px; 
+  color:#111; 
+}
+.home .menuSwiper .menu-card p { 
+  font-size:14px; 
+  color:#666; 
+  line-height:1.5; 
+}
+
+/* 네비게이션 화살표 */
+.home .menuSwiper .swiper-button-prev,
+.home .menuSwiper .swiper-button-next {
+  top: 50%; width: 30px; height: 30px; 
+  color:#013220; 
+  transform: translateY(-50%);
+}
+.home .menuSwiper .swiper-button-prev { 
+  left: 8px; 
+}
+.home .menuSwiper .swiper-button-next { 
+  right: 8px; 
+}
+
+
+
+/* ===== 반응형 ===== */
+@media (max-width: 1200px) {
+  .home .menu-header-inner { 
+    padding: 0 60px; 
+}
+  .home .menuSwiper { 
+    width: 80%; 
+}
+}
+
+
+@media (max-width: 1024px) {
+  .home .menu-header { 
+    margin-top: 48px; 
+    padding: 24px 0 8px; 
+  }
+  .home .menu-header-inner { 
+    max-width: none;
+    width: 88%;         
+    padding: 0;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+.home .menu-title{
+  font-size: 24px; 
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 20px;
+}
+  .home .menu-category {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin: 0; padding: 0;
+    list-style: none;
+    flex-wrap: wrap;                    
+}
+  .home .menuSwiper { 
+    width: 88%; 
+}
+  .home .menuSwiper .swiper-button-prev { 
+    left: 3px; 
+}
+  .home .menuSwiper .swiper-button-next { 
+    right: 3px; 
+}
+  .home .hero .mySwiper{ 
+    height:420px; 
+}
+}
+
+@media (max-width: 720px) {
+  .home .menu-header { 
+    margin-top: 40px; 
+    padding: 16px 0 8px; 
+}
+  .home .menu-header-inner { 
+    width: 92%;
+    padding: 0;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+  .home .menu-title { 
+    font-size: 20px;    
+    text-align: center;
+}
+  .home .menu-category { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin: 0; padding: 0;
+    list-style: none;
+    flex-wrap: wrap; 
+}
+  .home .menuSwiper { 
+    width: 92%; 
+}
+  .home .menuSwiper .menu-card{ 
+    width: 240px; 
+}
+  .home .menuSwiper .menu-card img { 
+    width: 240px; height: 168px; 
+}
+.home .menuSwiper .swiper-button-prev,
+  .home .menuSwiper .swiper-button-next{
+    display: none;
+  }
+.home .hero .mySwiper{ 
+  height:360px; 
+} }
+
+.mainNotice{
+    width: 100%;
+    background-color: #FAF7F2;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    box-sizing: border-box;
+    padding: 50px 0;
+   
+    
+}   
+.noticeTxtAndImg{
+    width: 30vw;
+
+
+}
+.noticeTxtAndImg h2{
+    font-size: 7vw;
+    font-weight: 700;
+    font-family: 'TheJamsil5Bold';
+}
+.noticeTxtAndImg h3{
+    padding-left: 70px;
+    font-size: 7vw;
+    font-weight: 700;
+    box-sizing: border-box;
+    font-family:'TheJamsil5Bold';
+}
+.noticeImg>img{
+    width: 100%;
+}
+.noticeBoxs{
+    width: 30vw;
+   
+}
+.noticeBoxs>div{
+    height: 10vh;
+    background-color: #1B5E4A;
+    color: #FAF7F2;
+    box-sizing: border-box;
+    margin-top: 50px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.noticeBoxs>div>p{
+   font-weight: 700;
+   line-height: 1.8;
+   text-align: center;
+}
+@media screen and (max-width:720px) {
+    .mainNotice{
+        flex-direction: column;
+    }
+    .noticeTxtAndImg{
+        width: 0;
+    }
+    .noticeTxt{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column  ;
+        line-height: 1.2;
+    }
+    .noticeImg{
+        display: none;
+    }
+    .noticeTxtAndImg h2{
+        font-size: 10vw;
+        font-weight: 700;
+        font-family: 'TheJamsil5Bold';
+        text-align: center;
+    }
+    .noticeTxtAndImg h3{
+        padding-left: 0;
+        font-size: 10vw;
+        font-weight: 700;
+        box-sizing: border-box;
+        font-family:'TheJamsil5Bold';
+        text-align: center;
+        ;
+    }
+    .noticeBoxs{
+        width: 70vw;
+    }
+}
+/* main_FRANCHISE CSS */
+.sec_Franchise {
+    width: 100%;
+    background-color: #1B5E4A;
+    padding: 200px 0 180px;
+}
+
+.art_Franchise {
+    width: 900px;
+    height: 450px;
+    margin: 0 auto;
+}
+
+.Franchise_title {
+    width: 100%;
+    min-height: 150px;
+    display: flex;
+    margin: 0 auto;
+    align-items: flex-end;
+    /* 세로 가운데 정렬 */
+    justify-content: center;
+    /* 가로 가운데 정렬 */
+    gap: 10px;
+    margin: 0 auto;
+}
+
+.Franchise_title_text {
+    font-size: 124px;
+    color: #fff;
+    font-family: 'TheJamsil5Bold', sans-serif;
+}
+
+.Franchise_title_dot {
+    width: 24px;
+    height: 24px;
+    background-color: #D80056;
+    margin-bottom: 45px;
+}
+
+.Franchise_text1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.Franchise_text2 {
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+
+}
+
+.Franchise_btn_parent {
+    width: 600px;
+    display: flex;
+    justify-content: space-between;
+    margin: 70px auto 0;
+}
+
+.Franchise_btn {
+    width: 255px;
+    height: 75px;
+    background-color: #fff;
+    display: flex;
+    /* flex 컨테이너로 만들기 */
+    justify-content: center;
+    /* 가로 가운데 */
+    align-items: center;
+    border: 1px solid #000;
+}
+
+.Franchise_btn:hover {
+    background-color: #D80056;
+}
+.Franchise_btn:hover h4{
+    color: #fff;
+}
+.Franchise_btn>h4 {
+    text-align: center;
+    font-size: 20px;
+    color: #000;
+}
+
+
+
+
+
+
+/* 반응형-태블릿 */
+@media (max-width: 1024px) {
+    .sec_Franchise {
+        padding: 200px 0 140px;
+    }
+
+    .art_Franchise {
+        width: 700px;
+    }
+
+    .Franchise_title_text {
+        font-size: 90px;
+    }
+
+    .Franchise_title_dot {
+        width: 13px;
+        height: 13px;
+        margin-bottom: 34px;
+    }
+
+    .Franchise_text1 {
+        font-size: 20px;
+    }
+
+    .Franchise_text2 {
+        font-size: 16px;
+    }
+
+    .Franchise_btn_parent {
+        width: 500px;
+    }
+
+    .Franchise_btn {
+        width: 200px;
+        height: 60px;
+    }
+
+    .Franchise_btn>h4 {
+        font-size: 15px;
+    }
+}
+
+
+/* 반응형-모바일 */
+@media (max-width: 720px) {
+    .sec_Franchise {
+        padding: 200px 0 200px;
+    }
+
+    .art_Franchise {
+        width: 80vw;
+    }
+
+    .Franchise_title_text {
+        font-size: clamp(30px, 8vw, 65px);
+    }
+
+    .Franchise_title_dot {
+        width: clamp(6px, 1vw, 24px);
+        height: clamp(6px, 1vw, 24px);
+        margin-bottom: 20px;
+        transform: translateY(calc((720px - 100vw) * 0.02));
+    }
+
+    .Franchise_text1 {
+        font-size: clamp(16px, 3vw, 24px);
+    }
+
+    .Franchise_text2 {
+        font-size: clamp(12px, 2vw, 16px);
+    }
+
+    .Franchise_btn_parent {
+        width: 500px;
+        display: block;
+    }
+
+    .Franchise_btn {
+        width: 72vw;
+        height: 60px;
+    }
+
+    .Franchise_rightBtn {
+        margin-top: 25px;
+    }
+
+}
