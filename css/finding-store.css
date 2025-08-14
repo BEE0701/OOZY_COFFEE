@@ -3,13 +3,13 @@ body {
 }
 .store-list{
   text-align: center;
-  padding: 50px 20px;
+  padding: 50px 130px;
   color: black;
 }
 .store-grid{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 65px;
+  gap: 40px;
   justify-content: center;
 }
 .store-card{
