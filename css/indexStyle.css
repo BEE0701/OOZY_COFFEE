@@ -114,10 +114,10 @@
   width:100%; 
   height: auto;
   object-fit:cover;
-  aspect-ratio: 260 / 182; 
+  aspect-ratio:260 / 182;
   margin-bottom:16px; 
   display:block;
-  box-shadow:  0 -5px 5px -z4px #666680 inset;
+  box-shadow: 0 -5px 5px -4px #66666680 inset;
 }
 .home .menuSwiper .menu-card h3 { 
   font-size:16px; 
