@@ -28,7 +28,6 @@
 }
 .home .hero .swiper-slide img {
   width: 100%;
-  max-width: 1920px;
   height: 100%;
   object-fit: fill;
   display: block;
@@ -137,9 +136,10 @@
   top: 50%; width: 30px; height: 30px; 
   color:#013220; 
   transform: translateY(-50%);
+
 }
 .home .menuSwiper .swiper-button-prev { 
-  left: 8px; 
+  left: 9px; 
 }
 .home .menuSwiper .swiper-button-next { 
   right: 8px; 
@@ -193,12 +193,12 @@
     width: 88%; 
 }
   .home .menuSwiper .swiper-button-prev { 
-    left: 3px; 
+    left: 30px; 
 }
   .home .menuSwiper .swiper-button-next { 
-    right: 3px; 
+    right: 30px; 
 }
-  .home .hero .mySwiper{ 
+  .home .hero .mySwiper{  
     height:420px; 
 }
 }

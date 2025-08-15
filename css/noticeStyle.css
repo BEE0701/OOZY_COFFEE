@@ -48,7 +48,7 @@ main{
 
 @media screen and (max-width:1024px) {
     main{
-        padding: 300px  100px;
+        padding: 300px  90px;
     }
     .noticeTitle>h2{
         font-size: 48px;
@@ -77,11 +77,17 @@ main{
 
 @media screen  and (max-width:720px){
    
+    main{
+        padding: 300px 40px;
+    }
     .notice{
         height: 60px;
     }
     .notice>.noticeTxt{
         font-size: 16px;
+    }
+    .noticeTitle>h2{
+        font-size: 5vw;
     }
     .noticeContent>p{
         max-width: 500px;

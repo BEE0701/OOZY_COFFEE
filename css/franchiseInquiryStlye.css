@@ -108,6 +108,7 @@ main{
     font-size: 18px;
     padding-top: 15px;
     font-family: "Noto Sans KR", sans-serif;
+    
 }
 .affiliationProceduresBottom{
     margin-top: 100px;
@@ -226,20 +227,28 @@ body .swiper{
  .inquirySlide{
      display: flex;
      gap: 20px;
+     padding:0 20px ;
+     box-sizing: border-box;
  }
  .inquirySlide>.inquirySlideBox{
+     height:350px ;
      background-color: #FAF7F2;
-     padding: 20px;
+     padding: 11px;
      box-sizing:border-box ;
+     
  }
  .inquirySlide .inquiryText{
     text-align: center;
  }
  .inquiryText>h2{
-    font-weight: bold;
+    font-weight: bold;  
     color: #013220; 
-    font-size: 18px;
+    font-size: 16px;
  }
+  .inquiryText>p{
+    font-size:14px;
+    padding-top: 15 px;
+  }
 
  .swiper-pagination .swiper-pagination-bullet {
      background-color: #D80056;
@@ -259,7 +268,7 @@ body .swiper{
 .franchiseInquiryTextBtn>h2{
     text-align: center;
     color: #FAF7F2;
-    font-size: 30px;
+    font-size: 20px;
     padding:10px ;
     font-family:'TheJamsil5Bold' ;
 }

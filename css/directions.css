@@ -85,12 +85,9 @@
 }
 
 
-@media (min-width:1025px){
+@media (min-width:1024px){
   .dir-wrap{
     grid-template-columns: minmax(580px, 1fr) minmax(420px, 1fr);
-  }
-  .dir-addr{
-    white-space: nowrap;
   }
 }
 
@@ -107,9 +104,7 @@
     padding: 24px 20px 64px;
   }
 
-  .dir-addr{ 
-    white-space: normal; 
-  }
+
 
   .dir-contact{
     display: grid;
@@ -130,7 +125,6 @@
 
   .dir-map img{
     width: 100%;
-    max-width: 820px;
     height: auto;
     display: block;
     margin: 0 auto;
@@ -157,8 +151,7 @@
     margin: 0 0 10px; 
     line-height: 1.6; 
 }
-  .dir-addr{ 
-    white-space: normal; 
+  .dir-addr{  
     margin: 0 0 14px; 
 }
   .dir-addr a{ 
@@ -181,8 +174,7 @@
     font-weight:700; 
 }
   .dir-contact dd{ 
-    margin:0; 
-    white-space:nowrap; 
+    margin:0;  
 }
   .dir-map img{
     width: 100%;
