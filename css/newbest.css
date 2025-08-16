@@ -187,6 +187,10 @@ body {
         margin-bottom: 40px;
         width: 100%;
     }
+        .m_sct_text {
+        font-size: 28px;
+        padding: 18px 50px;
+    }
 
     .coffee-section {
         padding-left: 100px;
@@ -195,6 +199,7 @@ body {
         box-sizing: border-box;
         width: 100%;
     }
+    
 
     .coffee-grid {
         gap: 20px;
@@ -222,11 +227,9 @@ body {
 /* 모바일 (720px 이하) */
 @media screen and (max-width: 720px) {
     .m_sct_text {
-        font-size: 24px;
-        padding: 15px 40px;
-        left: 50%;
-        top: 70%;
-        box-sizing: border-box;
+        font-size: 32px;
+        padding: 15px 30px;
+
     }
 
     .coffee-section {
@@ -269,20 +272,16 @@ body {
     .coffee-section {
         padding-left: 20px;
         padding-right: 20px;
-        box-sizing: border-box;
     }
 
     .m_sct_text {
-        font-size: 20px;
         padding: 10px 30px;
-        box-sizing: border-box;
     }
 
     .section-title {
         font-size: 20px;
         padding: 12px 25px;
         width: 95%;
-        box-sizing: border-box;
     }
 
     .oozy-flip-card {
@@ -296,6 +295,5 @@ body {
     .oozy-flip-back {
         font-size: 13px;
         padding: 15px;
-        box-sizing: border-box;
     }
 }

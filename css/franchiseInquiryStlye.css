@@ -5,7 +5,8 @@ main{
     
 }
 .aboutOozy{
-    padding: 145px 180px 180px;
+    margin-top: 100px;
+    padding: 145px 180px;
     box-sizing: border-box;
     position: relative;
 }
@@ -25,6 +26,12 @@ main{
     margin: 0 auto;
     line-height: 1.7;
     text-align: center;
+}
+.aboutOozy .aboutOozyTxt div:first-child{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 .aboutOozy .aboutOozyTxt h2{
     font-size: 128px;
@@ -52,11 +59,7 @@ main{
 }
 .franchiseInquiryBtn{
     width: 150px;
-    position: absolute;
-    left: 50%; right: 50%;
-    top: 90%; 
-    transform: translate(-50%);
-    
+    margin-top: 90px;
 }
 .franchiseInquiryBtn img{
     width: 100%;
@@ -108,7 +111,6 @@ main{
     font-size: 18px;
     padding-top: 15px;
     font-family: "Noto Sans KR", sans-serif;
-    
 }
 .affiliationProceduresBottom{
     margin-top: 100px;
@@ -227,28 +229,20 @@ body .swiper{
  .inquirySlide{
      display: flex;
      gap: 20px;
-     padding:0 20px ;
-     box-sizing: border-box;
  }
  .inquirySlide>.inquirySlideBox{
-     height:350px ;
      background-color: #FAF7F2;
-     padding: 11px;
+     padding: 20px;
      box-sizing:border-box ;
-     
  }
  .inquirySlide .inquiryText{
     text-align: center;
  }
  .inquiryText>h2{
-    font-weight: bold;  
+    font-weight: bold;
     color: #013220; 
-    font-size: 16px;
+    font-size: 18px;
  }
-  .inquiryText>p{
-    font-size:14px;
-    padding-top: 15 px;
-  }
 
  .swiper-pagination .swiper-pagination-bullet {
      background-color: #D80056;
@@ -268,7 +262,7 @@ body .swiper{
 .franchiseInquiryTextBtn>h2{
     text-align: center;
     color: #FAF7F2;
-    font-size: 20px;
+    font-size: 30px;
     padding:10px ;
     font-family:'TheJamsil5Bold' ;
 }

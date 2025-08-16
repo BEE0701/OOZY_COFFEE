@@ -21,6 +21,17 @@
       1024: { slidesPerView: 4,   spaceBetween: 30 },
     }
   });
+  $(document).ready(function(){
+    let img = {imgSrc : "./img/main_first-Section_img/mainSwiperSecondImg1.png"}
+    console.log(img)
+    let screenWidth = $(window).width();
+      if(screenWidth < 720){
+        $(".swiperImg1").attr("src","./img/main_first-Section_img/mainSwiperSecondImg1.png")
+        $(".swiperImg2").attr("src","./img/main_first-Section_img/mainSwiperSecondImg2.png")
+        $(".swiperImg3").attr("src","./img/main_first-Section_img/mainSwiperSecondImg3.png")
+        $(".swiperImg4").attr("src","./img/main_first-Section_img/mainSwiperSecondImg4.png")
+      }
+  })
 
   // 데이터
   const slideData = {
