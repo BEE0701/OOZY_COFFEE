@@ -344,7 +344,7 @@ header .h_side_nav_wrap_sub>li>a {
     
     /* 사이드 네비게이션 소형 모바일 최적화 */
     header>.h_side_nav {
-        width: 190px; /* 300px → 280px */
+        width: 210px; /* 300px → 280px */
         right: -280px;
         padding: 15px; /* 20px → 15px */
     }

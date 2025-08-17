@@ -12,7 +12,7 @@ $(document).ready(function(){
     // 모바일 버전 메뉴버튼 클릭 후 열기/닫기
     $(".h_btn_menu").on("click",function(){
         $(".h_side_nav").animate({
-            right: "-10px"
+            right: "0px"
         }, 500)
         $(".h_overlay").show()
     })
